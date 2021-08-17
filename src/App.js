@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import MatrixGradient from "./components/MatrixGradient"
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <MatrixGradient 
+        upperLeft={[0.937,0.988,0.325]}
+        lowerLeft={[0.988,0.263,0.804]}
+        upperRight={[0.475,0.937,0.769]}
+        lowerRight={[0.286, 0.267, 0.843]}
+        width={5}
+        height={7}
+      />
     </div>
   );
 }
